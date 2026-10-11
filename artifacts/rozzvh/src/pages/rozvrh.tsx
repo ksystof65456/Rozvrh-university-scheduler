@@ -9,7 +9,7 @@ import { ProfileAvatar } from "@/components/profile-avatar";
 import { listFriendships, type Profile } from "@/lib/friends";
 
 const weekdays = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"];
-const types = ["Přednáška", "Seminář", "Cvičení", "Laboratoř", "Konzultace", "Jiné"];
+const types = ["Přednáška", "Seminář", "Cvičení", "Laboratoř", "Konzultace", "Tělocvik" "Jiné"];
 type StartWeekChoice = "this" | "next" | "existing";
 const blankForm = {
   title: "",
@@ -157,7 +157,7 @@ function AuthScreen() {
       <main className="auth-page">
         <section className="auth-card setup-card">
           <div className="brand-mark"><CalendarDays size={21} strokeWidth={1.8} /></div>
-          <p className="eyebrow">ROZVRH · VÁŠ TÝDEN NA JEDNOM MÍSTĚ</p>
+          <p className="eyebrow">ROZZVRH · VÁŠ TÝDEN NA JEDNOM MÍSTĚ</p>
           <h1>Nejdřív připojíme<br />váš účet.</h1>
           <p className="auth-copy">Aplikace čeká na nastavení připojení. Požádejte správce o doplnění Supabase konfigurace.</p>
           <div className="config-note"><span className="config-dot" /> Služba není nakonfigurovaná</div>
@@ -169,7 +169,7 @@ function AuthScreen() {
   return (
     <main className="auth-page">
       <section className="auth-card">
-        <div className="auth-topline"><div className="brand-mark"><CalendarDays size={21} strokeWidth={1.8} /></div><span>ROZVRH</span></div>
+        <div className="auth-topline"><div className="brand-mark"><CalendarDays size={21} strokeWidth={1.8} /></div><span>ROZZVRH</span></div>
         <p className="eyebrow">{isRegister ? "NOVÝ ZAČÁTEK" : "VÁŠ TÝDEN, PŘEHLEDNĚ"}</p>
         <h1>{isRegister ? <>Vytvořte si<br />svůj rozvrh.</> : <>Zpátky<br />do rytmu.</>}</h1>
         <p className="auth-copy">{isRegister ? "Založte si účet a mějte výuku vždy po ruce." : "Přihlaste se a podívejte se, co vás tento týden čeká."}</p>
