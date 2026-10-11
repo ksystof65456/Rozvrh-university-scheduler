@@ -9,7 +9,7 @@ import { ProfileAvatar } from "@/components/profile-avatar";
 import { listFriendships, type Profile } from "@/lib/friends";
 
 const weekdays = ["Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek"];
-const types = ["Přednáška", "Seminář", "Cvičení", "Laboratoř", "Konzultace", "Tělocvik" "Jiné"];
+const types = ["Přednáška", "Seminář", "Cvičení", "Laboratoř", "Konzultace", "Tělocvik", "Jiné"];
 type StartWeekChoice = "this" | "next" | "existing";
 const blankForm = {
   title: "",
